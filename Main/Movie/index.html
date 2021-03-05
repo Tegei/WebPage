@@ -7,36 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
-        window.requestAnimFrame = (function() {
-          return (
-            window.requestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            window.oRequestAnimationFrame ||
-            window.msRequestAnimationFrame ||
-            function(callback) {
-              window.setTimeout(callback);
-            }
-          );
+        window.requestAnimFrame = (function () {
+            return (
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback);
+                }
+            );
         });
-        
+
         function init(elemid) {
-          let canvas = document.getElementById(elemid),
-            c = canvas.getContext("2d"),
-            w = (canvas.width = window.innerWidth),
-            h = (canvas.height = window.innerHeight);
-          c.fillStyle = "rgba(30,30,30,1)";
-          c.fillRect(0, 0, w, h);
-          return {c:c,canvas:canvas};
+            let canvas = document.getElementById(elemid),
+                c = canvas.getContext("2d"),
+                w = (canvas.width = window.innerWidth),
+                h = (canvas.height = window.innerHeight);
+            c.fillStyle = "rgba(30,30,30,1)";
+            c.fillRect(0, 0, w, h);
+            return { c: c, canvas: canvas };
         }
-        </script>
+    </script>
 </head>
 
 <body>
-    <canvas id="canvas" width="500px" height="500px"></canvas>
-    <h1>Movie</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zJu1kZxDjF4?rel=0" frameborder="0" allowfullscreen></iframe>
+    <canvas id="canvas" width="width" height="height"></canvas>
+    <div class="content">
+        <h1 style="color: thistle;">Movie</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zJu1kZxDjF4?rel=0" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
 </body>
-    <script type="text/javascript" src="cursor.js"></script>
+<script type="text/javascript" src="cursor.js"></script>
 
 </html>
