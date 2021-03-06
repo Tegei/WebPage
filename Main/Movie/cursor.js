@@ -222,7 +222,7 @@ window.onload = function () {
     function loop() {
         window.requestAnimFrame(loop);
         //   c.clearRect(0, 0, w, h);
-        c.fillStyle = 'rgba(50,50,50,0.2)'
+        c.fillStyle = 'rgba(70,90,70,0.2)'
         c.fillRect(0, 0, canvas.width, canvas.height);
         draw();
     }
