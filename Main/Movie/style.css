@@ -7,6 +7,14 @@ body {
     margin: 0;
 }
 
+.title {
+    font-size: 70px;
+    font-family: 'Comfortaa', cursive;
+    color: #ddd;
+    text-shadow:  -5px -5px 10px #1c241c,
+             5px 5px 10px #709070;
+}
+
 .content {
     margin-right: auto;
     margin-left: auto;
