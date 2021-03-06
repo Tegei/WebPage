@@ -136,21 +136,6 @@ window.onload = function () {
     //place for objects in animation
     function draw() {
 
-        // if (mouse.x) {
-        //     target.posX = mouse.x;
-        //     target.posY = mouse.y;
-        // }
-        // // target.errx = target.posX - target.x;
-        // // target.erry = target.posY - target.y;
-
-        // if (mouse.x) {
-        //     target.errx = mouse.x - target.x;
-        //     target.erry = mouse.y - target.y;
-        // }else {
-        //     target.errx = target.posX - target.x;
-        //     target.erry = target.posY - target.y;
-        // }
-
         // console.log(mouse.x + ' : ' + last_target.x);
         if (!mouse.x) {
             // 範囲外だと中央に行く
@@ -222,6 +207,8 @@ window.onload = function () {
 
             mouse.x = e.pageX - this.offsetLeft;
             mouse.y = e.pageY - this.offsetTop;
+            // mouse.x = e.pageX - this.;
+            // mouse.y = e.pageY - this.clientY;
         },
         false
     );
