@@ -3,7 +3,7 @@ var times=0;
 var r=0;
 var oldX;
 
-const imgarr=["img0","img1","img2"];
+const imgarr=["img0","img1","img2","img3","img4","img5","img6","img7"];
 let imgs=[];
 
 function setup()
@@ -35,7 +35,7 @@ function draw()
         translate(300,0,0);
         rotateZ(radians(90));
         texture(imgs[i]);
-        box(90,1,160);
+        box(imgs[i].height/10,1,imgs[i].width/10);
         pop();
     }
 

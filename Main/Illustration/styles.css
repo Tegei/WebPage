@@ -6,17 +6,13 @@ h1{
 h2{
   text-align: center;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 30px;
 }
-.box-row1 {
+h3{
   text-align: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 30px;
 }
-.box-row2 {
-  text-align: center;
-}
-.box-row3 {
-  text-align: center;
-}
-
 .fixed_btn
 {
   text-align: center;

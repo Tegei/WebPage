@@ -1,5 +1,5 @@
 let mimg=document.getElementById("Picture");
-const imgarr=["img0","img1","img2"];
+const imgarr=["img0","img1","img2","img3","img4","img5"];
 let n=0;
 
 function chimg(ton)
