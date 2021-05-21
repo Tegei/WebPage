@@ -80,10 +80,9 @@ function bom() {
   light.classList.remove("li1");
   light.classList.add("li2");
   flayer.textContent = "テゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテ";
-  planli[0].textContent = "テゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテ";
-  planli[1].textContent = "テゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテ";
-  planli[2].textContent = "テゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテ";
-  planli[3].textContent = "テゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテ";
+  for(let plan of planli){
+    plan.textContent = "テゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテゲテ";
+  }
   titled.textContent = "reload !";
   titled.style.color = "red";
 }
